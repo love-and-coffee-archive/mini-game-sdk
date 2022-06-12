@@ -1,0 +1,150 @@
+html {
+	background-color: #10263e;
+	font-family: "proximaNova", Helvetica, Arial, sans-serif;
+}
+
+.games {
+	display: flex;
+	flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+	padding-bottom: 100px;
+}
+
+.mini-game-container {
+	width: 320px;
+	height: 200px;
+	box-shadow: 0 0 5px #000;
+	border-radius: 2px;
+	background-color: #10263e;
+	margin: 0.5rem;
+	position: relative;
+	overflow: hidden;
+	background: url(https://smiletime-prod-cdn-assets.storage.googleapis.com/backgroundImages/starfieldSep2021.webp) center / 150%;
+}
+
+.client-screen {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-screen > strong {
+	color: #ccc;
+	margin-top: 1rem;
+	position: relative;
+	width: 100%;
+	text-align: center;
+}
+
+.new-client {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+	box-shadow: 0 0 15px #111;
+    left: 0;
+}
+
+.new-client input {
+	padding: 0.5rem;
+	font-size: 1.5rem;
+	background-color: #222;
+	margin-top: -0.25rem;
+	margin-right: 1rem;
+	text-align: center;
+	color: #ccc;
+	border: 0;
+	box-shadow: inset 0 0 5px #111;
+	border-radius: 5px;
+}
+
+.new-client button {
+	font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    margin-top: -0.25rem;
+    background: #10263e;
+    border: 0;
+	color: #ccc;
+    border-radius: 5px;
+	box-shadow: 0 0 5px #111;
+	cursor: pointer;
+}
+
+.close-client {
+	border: 1px solid #762424;
+    width: 16px;
+	height: 16px;
+    border-radius: 5px;
+    line-height: 1;
+    color: #762424;
+    font-family: monospace;
+    display: inline-block;
+    position: absolute;
+    right: 0.5rem;
+	cursor: pointer;
+}
+
+.scoreboard {
+	padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+}
+
+.scoreboard::-webkit-scrollbar {
+    display: none;
+}
+
+.user-score {
+	display: flex;
+	width: 320px;
+    color: #ccc;
+	justify-content: center;
+    align-items: center;
+	padding: 0.5rem;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+
+.user-score.offline {
+	filter: blur(2px);
+}
+
+.user-score:nth-of-type(2n) {
+	background-color: #00000063;
+}
+
+.user-score .avatar {
+	width: 30px;
+	height: 30px;
+	margin-right: 0.5rem;
+}
+
+.user-score .avatar img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+
+.user-score .name {
+	width: 100%;
+}
+
+.user-score .score {
+	margin-right: 0.25rem;
+}
+
+.user-score .rank {
+	margin-right: 0.5rem;
+	width: 24px;
+	text-align: right;
+}
